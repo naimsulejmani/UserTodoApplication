@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ict.kosovo.growth.usertodoapplication.TodoCreateViewController"
+            prefHeight="400.0" prefWidth="600.0">
+    <headerText>
+        New Todo Form Application
+    </headerText>
+    <content>
+        <GridPane hgap="10" vgap="10">
+
+            <Label text="Todo name: " GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="tfTodoName" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+            <Label text="Description: " GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextArea fx:id="taDescription" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+            <Label text="Deadline:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <DatePicker fx:id="dpDeadline" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+            <Label text="IsFinished:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <CheckBox fx:id="chbIsFinished" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+            <Label text="Color:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <ColorPicker fx:id="cpColor" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+        </GridPane>
+    </content>
+</DialogPane>

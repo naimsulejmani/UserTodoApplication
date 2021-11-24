@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ict.kosovo.growth.usertodoapplication.MainController"
+            prefHeight="400.0" prefWidth="600.0" fx:id="mainView">
+<top>
+    <MenuBar>
+        <Menu text="Admin Module">
+            <items>
+                <MenuItem text="Create a new Todo" onAction="#showTodoDialog"/>
+                <MenuItem text="Remove a Todo"/>
+                <SeparatorMenuItem/>
+                <MenuItem text="Exit" onAction="#closeApplication"/>
+            </items>
+        </Menu>
+    </MenuBar>
+</top>
+
+    <center>
+      <TableView fx:id="tvTodoItems"/>
+    </center>
+
+    <bottom>
+        <HBox>
+            <Label text="User logged: "/>
+            <Label text="" fx:id="lblUsername">
+                <font>
+                    <Font name="System bold" size="20"/>
+                </font>
+            </Label>
+        </HBox>
+    </bottom>
+</BorderPane>
