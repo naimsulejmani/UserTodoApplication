@@ -1,6 +1,8 @@
 module ict.kosovo.growth.usertodoapplication {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.sql;
+    requires com.microsoft.sqlserver.jdbc;
 
 
     opens ict.kosovo.growth.usertodoapplication to javafx.fxml;
